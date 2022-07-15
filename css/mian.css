@@ -1,0 +1,56 @@
+/* reset browser default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(108, 66, 3);
+}
+
+h1 {
+  text-align: center;
+}
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(20, 4, 4, 0.345),
+      rgb(108, 66, 3)
+    ),
+    url("https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  height: 240px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+  padding-top: 40px;
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+
+input {
+  padding: 5px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+  input {
+    width: 95%;
+  }
+}
